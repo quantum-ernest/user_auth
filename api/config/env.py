@@ -5,9 +5,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class EnvConfig(BaseSettings):
     model_config = SettingsConfigDict(env_file="./.env", env_file_encoding="utf-8")
     DJANGO_SECRET_KEY: str
-    DJANGO_DEBUG: str = True
-    POSTGRES_HOST: str = "localhost"
-    POSTGRES_PORT: int = 5432
+    DJANGO_DEBUG: bool | None = True
+    POSTGRES_HOST: str | None = "localhost"
+    POSTGRES_PORT: int | None = 5432
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
     POSTGRES_DATABASE_NAME: str
@@ -16,9 +16,9 @@ class EnvConfig(BaseSettings):
     EMAIL_HOST_USER: EmailStr
     EMAIL_HOST_PASSWORD: str
     DEFAULT_FROM_EMAIL: str
-    EMAIL_USE_TLS: bool = True
-    REDIS_HOST: str = "localhost"
-    REDIS_PORT: int = 6379
+    EMAIL_USE_TLS: bool | None = True
+    REDIS_HOST: str | None = "localhost"
+    REDIS_PORT: int | None = 6379
 
 
 envConfig = EnvConfig()
