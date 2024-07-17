@@ -1,0 +1,94 @@
+/* src/LoginForm.css */
+body{
+  background-image: url("/public/login_bg2.jpg");
+  background-size: cover;
+}
+.cardheader{
+  text-align: center;
+  padding-bottom: 20px;
+}
+.login-form-container {
+  max-width: 400px;
+  margin: 15% auto; /* Center horizontally and vertically using percentage */
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1em;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  margin-bottom: 1em;
+}
+
+button {
+  width: 100%;
+  padding: 0.5em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.login-method-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.login-method-switch button {
+  margin: 0 0.5em;
+}
+
+.signup-link {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .login-form-container {
+    margin: 20% auto; /* Adjust margin for smaller screens */
+  }
+}
