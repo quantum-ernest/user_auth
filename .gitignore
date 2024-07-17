@@ -1,0 +1,4 @@
+api/staticfiles
+/api/*.env
+__pycache__
+.ruff_cache
