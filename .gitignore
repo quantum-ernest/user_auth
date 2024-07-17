@@ -2,3 +2,7 @@ api/staticfiles
 /api/*.env
 __pycache__
 .ruff_cache
+
+/front/node_modules/
+/front/build/
+/front/*.env
